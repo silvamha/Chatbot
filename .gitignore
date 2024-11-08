@@ -4,3 +4,16 @@ notes/
 *.pdf
 *.md 
 *.env
+
+
+responses/
+
+*.zip
+
+*.svg
+
+ursula-instructions.js
+
+response.js
+
+dates.js
