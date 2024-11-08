@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import OpenAI from "openai";
-import { ursulaInstructions } from "./ursula-instructions";
+import { ursulaInstructions } from "./ursula-instructions.js";
 
 const ursulaString = JSON.stringify(ursulaInstructions);
 
@@ -19,7 +19,7 @@ const messages = [
   {
     role: "user",
     content:
-      "Urusla, please describe yourself physically in detail, along with your passions, likes and dislikes, please.",
+      "Urusla, please explicitly describe yourself physically in great detail being specific and through and then explain your passions in great detail, also as well as your role, dos and don'ts.",
   },
 ];
 
