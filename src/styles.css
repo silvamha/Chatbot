@@ -1,0 +1,220 @@
+/* Dark mode theme
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #333333;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .avatar-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #chat-area {
+    width: 60%;
+    max-width: 800px;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #messages {
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+  
+  #user-input {
+    width: calc(100% - 100px);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #007acc;
+  }
+  
+  button:hover {
+    background-color: #005f99;
+  }
+   */
+
+
+   /* Dark mode theme */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #333333;
+}
+
+/* Main container to center the chat area */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+/* Avatar container in top-right */
+.avatar-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Avatar image styling */
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Chat area styling */
+#chat-area {
+    width: 60%;
+    max-width: 800px;
+    background-color: #2b2b2b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Message display area */
+#messages {
+    height: 400px;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 10px;
+    background-color: #222222; /* Darker background for chat area */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Scrollbar styling */
+#messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+#messages::-webkit-scrollbar-track {
+    background-color: #222222;
+}
+
+/* Message container styling */
+.message {
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 80%;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* User message styling */
+.message.user {
+    background-color: #444444; /* Slightly darker background */
+    margin-left: auto; /* Align user messages to the right */
+    color: #e1e1e1; /* Softer white for readability */
+}
+
+/* Agent message styling */
+.message.assistant {
+    background-color: #333333; /* Slightly lighter background */
+    margin-right: auto; /* Align assistant messages to the left */
+    color: #d1d1d1; /* Softer white for readability */
+}
+
+/* User input area */
+#user-input {
+    width: calc(100% - 100px);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #007acc;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99;
+}
