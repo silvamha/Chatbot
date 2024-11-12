@@ -1,12 +1,38 @@
+# Modules
 node_modules/
+
+# Notes
 notes/
+responses/
+tales/
+
+# Security
+security/
+security
+.security 
+*.security
+
+# Text
+text/
+*.txt 
+
+# MISC
 *.txt
 *.pdf
-*.md 
+*.md
+
+# Secrets
 *.env
 
+# Hold working files while working on test code
+hold/ 
+tmp/
+*.hold
+*.tmp
 
-responses/
+
+
+
 
 *.zip
 

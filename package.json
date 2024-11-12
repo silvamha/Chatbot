@@ -6,13 +6,19 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "Ed Silva",
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.12",
     "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
     "openai": "^4.14.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
   }
 }

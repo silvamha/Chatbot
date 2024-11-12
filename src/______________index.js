@@ -1,6 +1,8 @@
 import dotenv from "dotenv";
 import OpenAI from "openai";
-import { ursulaInstructions } from "./ursula-instructions.js";
+import { ursulaInstructions } from "../luisa-instructions.js";
+
+
 
 const ursulaString = JSON.stringify(ursulaInstructions);
 
