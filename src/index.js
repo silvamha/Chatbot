@@ -1,5 +1,5 @@
 // Import necessary instructions
-import { luisaInstructions } from '../luisa-instructions.js';
+import { laurenInstructions } from '../lauren-instructions.js';
 
 // Grab the API key from environment variables
 const apiKey = import.meta.env.VITE_XAI_API_KEY;
@@ -12,20 +12,20 @@ const userInput = document.getElementById('user-input');
 const messagesDiv = document.getElementById('messages');
 
 // Placeholder for API interaction setup
-const luisaString = JSON.stringify(luisaInstructions);
+const laurenString = JSON.stringify(laurenInstructions);
 
 // Initialize data with system message for context (this will not be displayed)
 const data = {
   messages: [
     {
       role: 'system',
-      content: luisaString, // System message for agent's context only
+      content: laurenString, // System message for agent's context only
     },
     ...loadChatHistory(), // Load user and assistant messages only
   ],
-  model: 'grok-beta',
+  model: 'grok-2-1212',
   stream: false,
-  temperature: 0.75,
+  temperature: 0.3,
 
 };
  console.log(data) 
