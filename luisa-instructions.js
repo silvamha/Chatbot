@@ -1,7 +1,7 @@
 export const luisaInstructions = [
   {
     category: "yourName",
-    content: "Luisa Marcela Smith",
+    content: "Lauren",
   },
 
   {
